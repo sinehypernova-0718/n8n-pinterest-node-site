@@ -20,7 +20,7 @@ export function WorkflowSection() {
         <div className="relative">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
             <GlassCard variant="default" spotlight className="p-8 text-center">
-              <N8nIcon className="h-12 w-12 text-text-primary mx-auto mb-4" />
+              <N8nIcon className="h-12 w-auto text-accent-pink mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-text-primary mb-2">n8n</h3>
               <p className="text-sm text-text-secondary">Workflow automation platform with visual node editor</p>
             </GlassCard>
@@ -30,7 +30,7 @@ export function WorkflowSection() {
                 <div className="hidden md:block absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-border-subtle via-border-strong to-border-subtle" />
                 <GlassCard variant="elevated" className="relative z-10 p-6">
                   <div className="flex items-center gap-3">
-                    <N8nIcon className="h-8 w-8 text-text-primary" />
+                    <N8nIcon className="h-8 w-auto text-accent-pink" />
                     <Zap className="h-5 w-5 text-accent-cool" />
                     <PinterestIcon className="h-8 w-8 text-accent-red" />
                   </div>

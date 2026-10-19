@@ -38,7 +38,7 @@ export function Hero() {
           </div>
 
           <div className={`flex items-center gap-4 mb-8 transition-all duration-700 delay-100 ${entered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
-            <N8nIcon className="h-10 w-10 md:h-12 md:w-12 text-text-primary" />
+            <N8nIcon className="h-10 w-auto md:h-12 text-accent-pink" />
             <div className="flex flex-col items-center">
               <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-border-strong to-transparent" />
             </div>

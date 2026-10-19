@@ -29,7 +29,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <N8nIcon className="h-6 w-6 text-text-primary" />
+              <N8nIcon className="h-6 w-auto text-accent-pink" />
               <div className="h-[1px] w-3 bg-border-strong" />
               <PinterestIcon className="h-6 w-6 text-accent-red" />
             </Link>

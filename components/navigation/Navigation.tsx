@@ -38,8 +38,8 @@ export function Navigation() {
         <div className={cn("flex items-center justify-between rounded-2xl px-4 md:px-6 py-3", scrolled ? "glass-elevated shadow-lg shadow-black/40" : "bg-transparent")}>
           <Link href="/" className="flex items-center gap-3 group" aria-label="Home">
             <div className="relative flex items-center">
-              <N8nIcon className="h-6 w-6 md:h-7 md:w-7 text-text-primary" />
-              <div className="mx-1.5 h-[1px] w-4 bg-border-strong" />
+              <N8nIcon className="h-6 w-auto md:h-7 text-accent-pink" />
+              <div className="mx-2 h-[1px] w-4 bg-border-strong" />
               <PinterestIcon className="h-6 w-6 md:h-7 md:w-7 text-accent-red" />
             </div>
             <div className="hidden sm:block">
