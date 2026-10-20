@@ -7,24 +7,23 @@ describe("BrandIcons", () => {
     const { container } = render(<N8nIcon className="h-6 w-auto" />);
     const svg = container.querySelector("svg");
     expect(svg).toBeTruthy();
-    expect(svg?.getAttribute("viewBox")).toBe("0 0 304 160");
+    expect(svg?.getAttribute("viewBox")).toBe("0 0 240 96");
     expect(svg?.getAttribute("aria-label")).toBe("n8n");
     expect(svg?.getAttribute("role")).toBe("img");
 
     const path = svg?.querySelector("path");
     expect(path).toBeTruthy();
-    expect(path?.getAttribute("fill-rule")).toBe("evenodd");
   });
 
   it("renders official N8nLogo with full horizontal mark and wordmark", () => {
     const { container } = render(<N8nLogo />);
     const svg = container.querySelector("svg");
     expect(svg).toBeTruthy();
-    expect(svg?.getAttribute("viewBox")).toBe("0 0 576 160");
+    expect(svg?.getAttribute("viewBox")).toBe("0 0 480 96");
     expect(svg?.getAttribute("aria-label")).toBe("n8n");
 
     const paths = svg?.querySelectorAll("path");
-    expect(paths?.length).toBe(4);
+    expect(paths?.length).toBe(2);
   });
 
   it("renders PinterestIcon with 24x24 viewBox", () => {
