@@ -1,7 +1,7 @@
 export const project = {
-  name: "n8n Pinterest Node",
+  name: "n8n Social Workflow Node",
   packageName: "@sinehypernova-0718/n8n-nodes-pinterest",
-  tagline: "A community-built Pinterest integration for n8n.",
+  tagline: "A community-built integration for n8n.",
   description: "Automate Pinterest workflows from content management to analytics. Connect Pinterest API v5 directly to your n8n instance through this community node.",
   repositoryUrl: "https://github.com/sinehypernova-0718/n8n-nodes-pinterest",
   npmUrl: "https://www.npmjs.com/package/@sinehypernova-0718/n8n-nodes-pinterest",
