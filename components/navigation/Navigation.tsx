@@ -5,7 +5,7 @@ import { Menu, X, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { project } from "@/lib/metadata";
-import { PinterestIcon, N8nIcon } from "@/components/icons/BrandIcons";
+import { N8nIcon } from "@/components/icons/BrandIcons";
 
 const navLinks = [
   { href: "/docs/installation", label: "Installation" },
@@ -37,11 +37,7 @@ export function Navigation() {
       <nav className="mx-auto max-w-7xl px-4 md:px-6 transition-all duration-300">
         <div className={cn("flex items-center justify-between rounded-2xl px-4 md:px-6 py-3", scrolled ? "glass-elevated shadow-lg shadow-black/40" : "bg-transparent")}>
           <Link href="/" className="flex items-center gap-3 group" aria-label="Home">
-            <div className="relative flex items-center">
-              <N8nIcon className="h-6 w-auto md:h-7 text-accent-pink" />
-              <div className="mx-2 h-[1px] w-4 bg-border-strong" />
-              <PinterestIcon className="h-6 w-6 md:h-7 md:w-7 text-accent-red" />
-            </div>
+            <N8nIcon className="h-6 w-auto md:h-7 text-accent-pink" />
             <div className="hidden sm:block">
               <div className="text-sm font-medium text-text-primary leading-tight">n8n Pinterest</div>
               <div className="mono-label text-[10px] leading-tight">v{project.currentVersion}</div>
