@@ -1,10 +1,11 @@
 import { GlassCard } from "@/components/glass/GlassCard";
 import { project } from "@/lib/metadata";
-import { Image, LayoutGrid, BarChart3 } from "lucide-react";
+import { Image, LayoutGrid, BarChart3, Video } from "lucide-react";
 
 const capabilities = [
-  { icon: Image, title: "Pin Operations", description: "Full lifecycle management for Pins with analytics support.", operations: project.resources.pins.operations, color: "accent-cool" },
+  { icon: Image, title: "Pin Operations", description: "Full lifecycle management for Pins with analytics and product tag support.", operations: project.resources.pins.operations, color: "accent-cool" },
   { icon: LayoutGrid, title: "Board Operations", description: "Manage boards and board sections with full CRUD support.", operations: project.resources.boards.operations, color: "accent-warm" },
+  { icon: Video, title: "Media Operations", description: "Upload Pinterest video media with processing status tracking.", operations: project.resources.media.operations, color: "accent-pink" },
   { icon: BarChart3, title: "Analytics", description: "Retrieve metrics over specified date ranges for Pins.", operations: ["Get Analytics", "Get Multiple Pin Analytics"], color: "accent-lavender" },
 ];
 
@@ -21,7 +22,7 @@ export function CapabilitiesSection() {
             Verified operations from the current published release (v{project.currentVersion}).
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {capabilities.map((capability) => {
             const Icon = capability.icon;
             return (
