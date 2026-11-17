@@ -5,7 +5,7 @@ export const project = {
   description: "Automate Pinterest workflows from content management to analytics. Connect Pinterest API v5 directly to your n8n instance through this community node.",
   repositoryUrl: "https://github.com/sinehypernova-0718/n8n-nodes-pinterest",
   npmUrl: "https://www.npmjs.com/package/@sinehypernova-0718/n8n-nodes-pinterest",
-  currentVersion: "0.1.2",
+  currentVersion: "0.2.0",
   license: "MIT",
   author: "sinehypernova-0718",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "",
@@ -16,7 +16,9 @@ export const project = {
   resources: {
     pins: { name: "Pin", operations: ["Create","Get","Get Multiple Pin Analytics","List","Update","Delete","Save","Get Analytics","Add Product Tags","List Product Tags","Remove Product Tags"] },
     boards: { name: "Board", operations: ["Create","Create Board Section","Delete","Delete Board Section","Get","List","List Board Sections","List Pins","List Pins on Board Section","Update","Update Board Section"] },
-    media: { name: "Media", operations: ["Upload Video","Get Upload","List Uploads"] }
+    media: { name: "Media", operations: ["Upload Video","Get Upload","List Uploads"] },
+    userAccount: { name: "User Account", operations: ["Get","Get Analytics","Get Top Pins Analytics","Get Top Video Pins Analytics","List Linked Businesses","List Followers","List Following","List Following Boards","Follow User","Get Websites","Verify Website","Unverify Website","Get Website Verification Code","List Following Interests"] },
+    entityHistory: { name: "Entity History", operations: ["Get"] }
   },
 } as const;
 export type Project = typeof project;

@@ -3,6 +3,24 @@ import { validateReleases } from "@/lib/release-schema";
 
 export const releases: Release[] = [
   {
+    version: "0.2.0",
+    date: "2026-11-16",
+    title: "User Account & Entity History",
+    summary: "Adds the User Account resource with 14 operations and a new Entity History resource for ad entity change history.",
+    type: "feature",
+    featured: true,
+    highlights: [
+      "Adds the User Account resource with 14 operations, including account analytics, top Pins and top video Pins analytics, followers, following, following boards, linked businesses, and website verification.",
+      "Adds the Entity History resource with a Get operation for ad entity change history, including bookmark pagination, field filters, and time-range parameters.",
+      "Extends the OAuth2 credential scopes with user_accounts:write and ads:read to support the new operations.",
+      "Applies Prettier formatting across the repository for consistent code style.",
+    ],
+    githubReleaseUrl: "https://github.com/sinehypernova-0718/n8n-nodes-pinterest/releases/tag/v0.2.0",
+    npmUrl: "https://www.npmjs.com/package/@sinehypernova-0718/n8n-nodes-pinterest/v/0.2.0",
+    tags: ["user-account", "entity-history", "analytics", "advertising"],
+    status: "published",
+  },
+  {
     version: "0.1.2",
     date: "2026-10-26",
     title: "Media Uploads & Product Tags",
